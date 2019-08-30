@@ -1,0 +1,133 @@
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - FOOTER */
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+	position: relative;
+	text-align: center;
+	z-index: 14;
+	border-top: 1px solid #ebebeb;
+	background: #fff;
+	.socialWrapper {
+		display: table;
+		margin: 0 auto;
+	}
+}
+
+.footerBigLogo {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	font-size: 250px;
+	line-height: 250px;
+	color: #f6f6f6;
+	display: table;
+	margin: 0 auto;
+	z-index: -1;
+	user-select: none;
+	transform: translateX(-50%);
+}
+
+.footerLogo {
+	display: table;
+	margin: 0 auto;
+	max-width: 162px;
+	height: 52px;
+	transition: opacity 200ms linear;
+}
+
+.footerNav {
+	position: relative;
+	font-size: 0;
+	font-weight: 700;
+	color: $mainBlackColor;
+	text-align: center;
+	li {
+		font-size: 13px;
+		line-height: 22px;
+		display: inline-block;
+		margin: 0 35px;
+		a {
+			display: block;
+			transition: color 275ms ease-out;
+		}
+	}
+}
+
+.copy {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.redstone a {
+	display: table;
+	margin: 0 auto;
+	p {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 8px;
+		transition: color 250ms linear;
+	}
+	img {
+		max-width: 42px;
+		max-height: 12px;
+		height: auto;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+	body:not(.mobile) {
+		.footerNav a:hover {
+			color: $orangeColor;
+		}
+		.redstone a:hover {
+			color: #be0000;	
+		}
+		.footerLogo:hover {
+			opacity: .8;
+		}
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1500px) {
+	.footerNav li {
+		margin: 0 22px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.footerBigLogo {
+		top: 20px;
+		font-size: 190px;
+	}
+}
+
+@media (max-width: 991px) {
+    .footerBigLogo {
+		top: 0;
+		font-size: 165px;
+	}
+}
+
+@media (max-width: 767px) {
+    .footerNav li {
+		display: block;
+		margin: 0 0 15px 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+    }
+    .footerBigLogo {
+    	display: none;
+    }
+}

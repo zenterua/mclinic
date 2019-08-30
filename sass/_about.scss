@@ -1,0 +1,77 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - ABOUT */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.teamThumbs {
+	.imgWrapper {
+		position: relative;
+		display: block;
+		backface-visibility: hidden;
+		img {
+			margin: 0 auto;
+		}
+	}
+	.teamInfo {
+		padding: 27px 30px;
+		.as {
+			margin-bottom: 13px;
+			transition: color 250ms linear;
+		}
+	}
+	.imgPreloader{
+	 	position: absolute;
+	    top: 50%;
+	    left: 50%;
+   		transform: translate(-50%,-50%);
+	 }
+}
+
+.teamPopupImage {
+	text-align: center;
+	.animationSlide {
+		display: inline-block !important;
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+	body:not(.mobile) {
+		.teamInfo .as:hover {
+			color: $orangeColor;
+		}
+	}
+	
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media(max-height: 700px) and (min-width: 1200px) {
+	body:not(.mobile) {
+		.teamThumbs .imgWrapper img {
+			max-height: 400px;
+		}
+		.teamPopupImage img {
+			max-height: 450px;
+		}
+	}
+	
+}
+
+@media (max-width: 767px) {
+	.servicesImg.mobileServices {
+		display: block;
+		margin-top: 0;
+		.btnPosition {
+			margin-top: -30px;
+			margin-left: -30px;
+		}
+		.bgImage {
+			padding-bottom: 60%;
+		}
+	}
+}

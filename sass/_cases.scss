@@ -1,0 +1,274 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - CASES */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.gridWrapper {
+	margin: 0 -15px;
+}
+
+.grid {
+	margin: 0 80px;
+}
+
+.grid-item,
+.grid-sizer {
+	width: calc(33.3333% - 30px);
+	margin: 0 15px;
+}
+
+.filters-button-group {
+	position: relative;
+	max-width: 1500px;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	padding: 14px 0;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, .1);
+	background: #fff;
+	.filterButton {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		padding: 10px 63px;
+		cursor: pointer;
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 1px;
+			height: 100%;
+			background: #e1e1e1;
+			content: '';
+		}
+		&:last-child:after {
+			content: none;
+		}
+		.as {
+			letter-spacing: 0;	
+			transition: color 250ms linear;
+		}
+		&.is-checked .as {
+			color: $orangeColor;
+		}
+	}
+}
+
+// Masonry sticky
+.stickyWrapper {
+	overflow: hidden;
+}
+.sticky {
+	padding: 20px;
+	width: 100%;
+	&.stickyOn {
+		position: fixed;
+		left: 50%;
+		bottom: 0;
+		display: table;
+		z-index: 15; 
+		padding: 30px;
+		transform: translateX(-50%) !important;
+		transition: none !important;
+		.filters-button-group {
+			opacity: 0;
+			transform: translateY(100px);
+			&.showFilter {
+				opacity: 1;
+				transform: translateY(0);
+				transition: transform 300ms linear, opacity 300ms linear;
+			}
+		}
+	}
+	&.active {
+		transform: translate(0, -50%);
+	}
+	.masonryResponsive {
+		position: absolute;
+		top: 0;
+		right: -60px;
+		display: inline-block;
+		vertical-align: middle;
+		height: 60px;
+		width: 60px;
+		cursor: pointer;
+		z-index: 21;
+		margin-left: 15px;
+		background: #fff;
+		box-shadow: 0 5px 30px rgba(0, 0, 0, .1);
+		display: none;
+		span {
+			position: absolute;
+			height: 1px;
+			width: 34px;
+			background: $mainBlackColor;
+			display: block;
+			transition: transform 200ms linear, opacity, 200ms linear, width 200ms linear, height 200ms linear;
+			&:nth-child(1){
+				top: 22px;
+				left: 50%;
+				margin-left: -14px;
+				&:before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 1px;
+					background: $orangeColor;
+					content: '';
+					transition: width 200ms linear 250ms;
+				}
+			}
+			&:nth-child(2) {
+				top: 50%;
+				left: 50%;
+				width: 34px;
+				margin-left: -14px;
+				&:before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 1px;
+					background: rgba(255, 255, 255, .8);
+					content: '';
+					transition: all 200ms linear;
+				}
+				&:after {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 0;
+					height: 1px;
+					background: rgba(255, 255, 255, .8);
+					content: '';
+					transition: all 200ms linear;
+				}
+			}
+			&:nth-child(3) {
+				bottom: 22px;
+				left: 50%;
+				margin-left: -14px;
+				&:before {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 0;
+					height: 1px;
+					background: $orangeColor;
+					content: '';
+					transition: all 200ms linear 500ms;
+				}
+			}
+		}
+		&.active {
+			span {
+				&:nth-child(1) {
+					transform-origin: 17% 50%;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+					background: #fff;
+					&:before {
+						width: 100%;
+					}
+				}
+				&:nth-child(2) {
+					background: transparent;
+					&:before {
+						opacity: 0;
+						visibility: hidden;
+						transform: translate(-20px);
+					}
+					&:after {
+						opacity: 0;
+						visibility: hidden;
+						transform: translate(20px);
+					}
+				}
+				&:nth-child(3) {
+					transform-origin: 19% 50%;
+					transform: rotate(-45deg);
+					background: #fff;
+					&:before {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+	body:not(.mobile) {
+		.filterButton:hover .as {
+			color: $orangeColor;
+		}
+	}
+	
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1280px) {
+	.grid-item,
+	.grid-sizer {
+		width: calc(50% - 30px);
+	}
+}
+
+@media (max-width: 1199px) {
+	.filters-button-group .filterButton {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (max-width: 991px) {
+	.grid {
+		margin: 0;
+	}
+	.sticky {
+		position: fixed !important;
+		top: 50%;
+		left: 0;
+		z-index: 13;
+		width: auto;
+		max-width: 250px;
+		margin-top: 80px;
+		padding: 0;
+		transform: translate(-100%, -50%);
+		transition: transform 300ms linear;
+		.filterButton {
+			display: block;
+			padding-top: 13px;
+			padding-bottom: 13px;
+			&:after {
+				content: none;
+			}
+		}
+		.masonryResponsive {
+			display: block;
+		}
+	}
+	.filters-button-group {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.sticky:not(.stickyOn) {
+		position: relative !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.grid-item,
+	.grid-sizer {
+		width: calc(100% - 30px);
+	}
+}

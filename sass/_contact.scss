@@ -1,0 +1,106 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - CONTACT */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.contactInfo  {
+	position: relative;
+	line-height: 24px;
+	z-index: 5;
+	overflow: hidden;
+	.infoTab {
+		position: relative;
+		margin-left: 10px;
+		.imgWrapper {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			pointer-events: none;
+			transform: translateY(-50%);
+			img {
+				width: 18px;
+				height: 18px;
+			}
+		}
+		a {
+			padding-left: 39px;
+			z-index: 2;
+			white-space: normal;
+			display: inline-block;
+			transition: color 250ms linear;
+		}
+		b {
+			color: $mainBlackColor;
+			margin-right: 9px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.marker {
+		transition: color 250ms linear;
+	}
+
+}
+
+.contactMapWrapper {
+	position: relative;
+	transform: translateY(-80px);
+	.descrOverflow {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.contactForm {
+	position: relative;
+	z-index: 5;
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+	body:not(.mobile) {
+		.contactInfo .infoTab a:hover,
+		.marker:hover  {
+			color: $orangeColor;
+		}
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1199px) {
+	.fullHeightImg.size2 {
+		width: 45%;
+	}
+}
+
+@media (max-width: 991px) {
+    .contactMapWrapper .descrOverflow {
+    	top: 0;
+    	left: 0;
+    	transform: translate(0%,0%);
+    }
+}
+
+@media (max-width: 767px) {
+	.contactMapWrapper {
+    	transform: translateY(0);
+    }
+    .contactInfo .infoTab {
+    	margin-left: 0;
+    }
+}

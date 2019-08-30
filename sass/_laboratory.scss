@@ -1,0 +1,64 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - LABORATORY */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.labContent {
+	height: 970px;
+	padding-right: 80px;
+	.cellView {
+		padding: 225px 0;
+	}
+}
+
+.labImages {
+	.bgImage {
+		filter: grayscale(100%);
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1366px) {
+	.labContent {
+		height: 650px;
+		.cellView {
+			padding: 175px 0 60px;
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+	.labImages .fullHeightImg {
+		position: relative;
+	    height: auto;
+	    width: 100%;
+	    padding-bottom: 55%;
+	}
+	.labContent {
+		height: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		.cellView {
+			padding: 50px 0;
+		}
+		.mainTitle.style3 {
+			max-width: 100%
+		}
+	}
+	
+}
+
+@media (max-width: 767px) {
+	.labContent .cellView {
+		padding: 30px 0 65px;
+	}
+	.labImages .fullHeightImg {
+		padding-bottom: 75%;
+	}
+}

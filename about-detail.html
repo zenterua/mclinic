@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Mvision</title>
+    
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #fff;z-index: 100;}
+        body:not(.mobile)::-webkit-scrollbar {width: 8px;}
+        body:not(.mobile)::-webkit-scrollbar-track {background: rgba(192, 192, 192, .7); width: 3px;}
+        body:not(.mobile)::-webkit-scrollbar-thumb {background: #f26522;width: 3px;}
+    </style>
+    
+</head>
+<body>
+
+    <!--    Loader-START    -->
+    <div id="loader-wrapper">
+        
+    </div>
+    <!--    Loader-END  -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header class="style scrolled">
+            <div class="headerContent">
+                <a id="logo" href="index.html">
+                    <img src="img/logo-white.png" alt="">
+                    <img src="img/logo-black.png" alt="">
+                </a>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="services.html">Отбеливание + гигиена</a></li>
+                        <li><a href="services.html">Керамические виниры</a></li>
+                        <li><a href="services.html">Перевоплощение улыбки</a></li>
+                    </ul>
+                </nav>
+
+                <div class="headerRightSide">
+
+                    <div class="headerContact">
+                        <div class="closeLayer"></div>
+                        <div class="triangleShadow"></div>
+
+                        <div class="imgWrapper">
+                            <img src="fonts/svg/smartphone.svg" alt="">
+                            <img src="fonts/svg/smartphone-black.svg" alt="">
+                        </div>
+
+                        <div class="headerContactInfo">
+                            
+                            <div class="button style3">
+                               <a href="contact.html" class="btn">Записатся сейчас</a>
+                               <i></i>
+                            </div>
+                            
+                            <div class="emptySpace25"></div>
+
+                            <span>Тел.:</span>
+                            <a class="contactLink" href="tel:380660588795">+38 (066) 05 88 795</a>
+
+                            <div class="emptySpace20"></div>
+
+                            <span>Факс:</span>
+                            <a class="contactLink" href="fax:380342501124">+38 (0342) 50 11 24</a>
+
+                            <div class="emptySpace20"></div>
+
+                            <span>Email:</span>
+                            <a class="contactLink" href="mailto:mvisionclinic@gmail.com">mvisionclinic@gmail.com</a>
+
+                            <div class="emptySpace30"></div>
+
+                            <div class="button">
+                               <a href="#" class="btn">Наши контакты</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button smallBtn light">
+                       <a href="http://mvision.pro/" target="_blank" class="btn">Наши курсы</a>
+                    </div>
+
+                    <div class="pageLanguage">
+                        <span>RU</span>
+                        <ul>
+                            <li><a href="index.html">UA</a></li>
+                            <li><a href="index.html">EN</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menuIcon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headerNav">
+                
+                <!-- Description-START -->
+                <div class="headerDescription">
+                    <h2 class="h2 as"><span>Мечта или <b>реальность</b></span></h2>
+                    <h2 class="h2 as"><span>Реальность или <b>мечта</b></span></h2>
+                    <h2 class="h2 as"><span>Мечта или <b>Новости</b></span></h2>
+                    <h2 class="h2 as active"><span>О нас или <b>реальность</b></span></h2>
+                    <h2 class="h2 as"><span>Реальность или <b>Лаборатория</b></span></h2>
+                    <h2 class="h2 as"><span>Контакты или <b>Мечта</b></span></h2>
+                    <h2 class="h2 as"><span>Мечта или <b>Новости</b></span></h2>
+                    <h2 class="h2 as"><span>О нас или <b>реальность</b></span></h2>
+                    <h2 class="h2 as"><span>Реальность или <b>Лаборатория</b></span></h2>
+                </div>
+                <!-- Description-END -->
+
+                <div class="imgWrapper imageHoverAnimation">
+                    <div class="bgImage" style="background-image: url(img/menu-img.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/about-us-img.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/contact-bg.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/about-us-img.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/services-parallax-img.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/contact-bg.jpg);"></div>
+                </div>
+                
+                <ul class="navWrapper">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="cases.html">Наши работы</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li class="active"><a href="about.html">О нас</a></li>
+                    <li><a href="laboratory.html">Лаборатория</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li class="hidden-lg"><a href="cases.html">Отбеливание + гигиена</a></li>
+                    <li class="hidden-lg"><a href="cases.html">Керамические виниры</a></li>
+                    <li class="hidden-lg"><a href="cases.html">Перевоплощение улыбки</a></li>
+                </ul>            
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <div class="section">
+            <div class="animatePopupContent animationTrggWrapper">
+                <div class="aboutUsPopup">
+                <div class="emptySpace150 emptySpace-lt100 emptySpace-sm75"></div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row verAlign">
+                                <div class="col-sm-6 col-md-5">
+                                    <div class="imgWrapper">
+                                        <div class="animationSlide slideRight">
+                                            <img src="img/team-popup-img.jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="emptySpace-xs75"></div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-md-offset-1">
+                                    <!-- Main title-START -->
+                                    <div class="mainTitle style6">
+
+                                        <h2 class="h2 as">Назарий <span><b>Михайлюк</b></span></h2>
+                                        <p class="subAs">Главный врач, основатель M. Vision Clinic</p>
+
+                                        <div class="emptySpace65"></div>
+
+                                        <div class="simpleArticle">
+                                            <p>Sed laoreet cursus vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sagittis suscipit iaculis. Curabitur lacus nunc, malesuada sit amet imperdiet ac, volutpat sed mauris. Cras id tristique ex. Proin a auctor lorem. Integer interdum turpis vitae turpis fringilla, ut vehicula ante porttitor. Sed interdum magna enim, id volutpat risus lobortis a.</p>
+
+                                            <p>Maecenas euismod tincidunt euismod. Mauris lacinia iaculis arcu. Praesent vel libero vel lectus laoreet ultrices. Etiam tempus enim in sem sagittis pellentesque. Donec ac elit lorem. Fusce a eros leo.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Main title-END -->
+                                </div>
+                            </div>
+
+                            <div class="emptySpace150 emptySpace-lt100 emptySpace-sm75"></div>
+
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <!--    Swiper-START    -->
+                                    <div class="swiperMainWrapper responsivefullWidth">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <!--    Slide1-START    -->
+                                                <div class="swiper-slide">
+                                                    <div class="teamPopupWrapper">
+                                                        <div class="imgWrapper">
+                                                            <div class="bgImage" style="background-image: url(img/team-popup-img2.jpg)" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!--    Slide1-END  -->
+                                                
+                                                <!--    Slide2-START    -->
+                                                <div class="swiper-slide">
+                                                    <div class="teamPopupWrapper">
+                                                        <div class="imgWrapper">
+                                                            <div class="bgImage" style="background-image: url(img/team-popup-img3.jpg)" >
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <!--    Slide2-END  -->
+                                                
+                                                <!--    Slide3-START    -->
+                                                <div class="swiper-slide">
+                                                    <div class="teamPopupWrapper">
+                                                        <div class="imgWrapper">
+                                                            <div class="bgImage" style="background-image: url(img/team-popup-img4.jpg)">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--    Slide3-END  -->
+                                            </div>
+                                            <div class="swiper-pagination relative-pagination visible-xs visible-sm"></div>
+                                        </div>
+                                        <div class="swiperNav position4 hidden-sm hidden-xs">
+                                            <!--    Swiper Buttons-START    -->
+                                            <div class="swiper-button-prev swiper-button-black"></div>
+                                            <div class="swiper-button-next swiper-button-black"></div>
+                                            <!--    Swiper Buttons-END  -->
+                                        </div>
+                                    </div>
+                                    <!--    Swiper-END  -->
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="emptySpace130 emptySpace-lt90 emptySpace-sm55"></div>
+
+                                    <!-- Main title-START -->
+                                    <div class="mainTitle">
+                                        <h2 class="h2 as">Мои <span><b>работы</b></span></h2>
+                                    </div>
+                                    <!-- Main title-END -->
+
+                                    <div class="emptySpace25"></div>
+
+                                    <!--    Swiper-START    -->
+                                    <div class="swiperMainWrapper responsivefullWidth">
+                                        <div class="swiper-container"  data-breakpoints="1" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-slides-per-view="3" data-space="30" data-space-responsive="0" data-auto-height="1">
+                                            <div class="swiper-wrapper">
+                                                <!--    Slide1-START    -->
+                                                <div class="swiper-slide">
+                                                    <div class="smileThumbs small fadeOutTop">
+                                                        <a href="#" class="catTitle">Перевоплощение улыбки</a>
+                                                            
+                                                        <a href="#" class="imgWrapper">
+                                                            <img src="img/smile.jpg" alt="">
+                                                            <span class="sliderVideo">
+                                                                <video src="mvision_videos/reviews_small_size/2-Study-resort-модуль-1.mp4"></video>
+                                                            </span>
+                                                            
+                                                        </a>
+
+                                                        <div class="smileContent">
+                                                            <a href="#"><h4 class="h4 as">Лиля</h4></a>
+                                                            <div class="smilePrice">
+                                                                <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+                                                                <span><b>Время:</b> <img src="fonts/svg/wait.svg" alt=""></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="simpleArticle small">
+                                                            <p><b>Процедура: </b> 10 керамических вениров. Цвет B1.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--    Slide1-END  -->
+                                                
+                                                <!--    Slide2-START    -->
+                                                <div class="swiper-slide">
+                                                    <div class="smileThumbs small fadeOutTop" style="transition-delay: 400ms">
+                                                        <a href="#" class="catTitle">Перевоплощение улыбки</a>
+
+                                                        <a href="#" class="imgWrapper">
+                                                            <img src="img/smile2.jpg" alt="">
+                                                            <span class="sliderVideo">
+                                                                <video src="mvision_videos/reviews_small_size/3-Study-resort-модуль-2.mp4"></video>
+                                                            </span>
+                                                        </a>
+
+                                                        <div class="smileContent">
+                                                            <a href="#"><h4 class="h4 as">Сантиа</h4></a>
+                                                            <div class="smilePrice">
+                                                                <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+                                                                <span>
+                                                                    <b>Время:</b> 
+                                                                    <img src="fonts/svg/wait.svg" alt="">
+                                                                    <img src="fonts/svg/wait.svg" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="simpleArticle small">
+                                                            <p><b>Процедура: </b> 7 керамических вениров.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--    Slide2-END  -->
+                                                
+                                                <!--    Slide3-START    -->
+                                                <div class="swiper-slide">
+                                                    <div class="smileThumbs small fadeOutTop" style="transition-delay: 800ms">
+                                                        <a href="#" class="catTitle">Перевоплощение улыбки</a>
+
+                                                        <a href="#" class="imgWrapper">
+                                                            <img src="img/smile3.jpg" alt="">
+                                                            <span class="sliderVideo">
+                                                                <video src="mvision_videos/reviews_small_size/4-Study-resort-модуль-3.mp4"></video>
+                                                            </span>
+                                                        </a>
+
+                                                        <div class="smileContent">
+                                                            <a href="#"><h4 class="h4 as">Ярослав</h4></a>
+                                                            
+                                                            <div class="smilePrice">
+                                                                <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+                                                                <span><b>Время:</b> <img src="fonts/svg/wait.svg" alt=""></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="simpleArticle small">
+                                                            <p><b>Процедура: </b> 28 керамических реставраций</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--    Slide3-END  -->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="swiperNav">
+                                            <div class="emptySpace80 emptySpace-lt60 emptySpace-sm40"></div>
+                                            <div class="swipperInner">
+                                                <div class="btnWrapper">
+                                                    <!--    Swiper Buttons-START    -->
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                    <!--    Swiper Buttons-END  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Swiper-END  -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emptySpace150 emptySpace-lt100 emptySpace-sm75"></div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- Footer-START -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="emptySpace100 emptySpace-xs75"></div>
+
+                        <div class="footerBigLogo">MVISION</div>
+
+                        <a href="index.html" class="footerLogo imgWrapper"><img src="img/logo-black.png" alt=""></a>
+
+                        <div class="emptySpace50 emptySpace-xs30"></div>
+
+                        <ul class="footerNav">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="cases.html">Наши работы</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="laboratory.html">Лаборатория</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+
+                        <div class="emptySpace55 emptySpace-xs30"></div>
+
+                        <!--    Social-START    -->
+                        <div class="socialWrapper">
+                            <a class="fb" href="https://www.facebook.com/" target="_blank"><img src="fonts/svg/facebook-logo-white.svg" alt=""></a>
+                            <a class="inst" href="https://www.instagram.com/" target="_blank"><img src="fonts/svg/instagram-white.svg" alt=""></a>
+                            <a class="yot" href="https://www.youtube.com/" target="_blank"><img src="fonts/svg/youtube-white.svg" alt=""></a>
+                        </div>
+                        <!--    Social-END  -->
+
+                        <div class="emptySpace50 emptySpace-xs30"></div>
+
+                        <div class="copy">&copy; 2018 Стоматологическая практика Михайлюка</div>
+                        <div class="redstone">
+                            <a href="http://redstone.media/" class="" title="Разработка сайтов">
+                                <p>Разработка</p>
+                                <img src="img/redstone-logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="emptySpace60 emptySpace-xs60"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+    </div>
+
+    <!--    Popup-START     -->
+    <div class="popupWrapper">
+        <div class="bgLayer"></div>
+        <!-- Team popup-START -->
+        <div class="popupContent popupAni2" data-rel="2" style="background-color: #fff">
+            <div class="layerClose"></div>
+            <div class="popupContainer fullSize ajaxWrapperContent">
+                
+            </div>
+            <!--    Popup close button-START    -->
+                <div class="buttonClose">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+        </div>
+        <!-- Team popup-END -->
+
+        <!--    Video-START    -->
+        <div class="popupContent" data-rel="videoPopup">
+            <div class="layerClose"></div>
+            <div class="popupContainer">
+                <!-- Popup content-START -->
+                <div class="popupVideWrapper">
+                    
+                </div>
+                <!-- Popup content-END -->
+
+                <!--    Popup close button-START    -->
+                <div class="buttonClose light">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Video-END  -->
+
+    </div>
+    <!--    Popup-END   -->
+
+    <!-- Ajax loader-START -->
+    <div class="ajaxLoader">
+        <div class="Loader">
+            <div class="Bar"></div>
+            <div class="Bar"></div>
+            <div class="Bar"></div>
+            <div class="Bar"></div>
+            <div class="Bar"></div>
+            <div class="Bar"></div>
+        </div>
+    </div>
+    <!-- Ajax loader-END -->
+    
+    <!--    Styles-START    -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+    <!--    Styles-END  -->
+
+    <!-- Fonts-START -->
+    <link href="https://fonts.googleapis.com/css?family=Arsenal:400,700%7CRoboto:400,500,700" rel="stylesheet">
+    <!-- Fonts-END -->
+
+    <!--    Scripts-START   -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/global.min.js"></script>
+    <!--    Scripts-END     -->
+
+</body>
+</html>

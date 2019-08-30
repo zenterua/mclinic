@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Mvision</title>
+    
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #fff;z-index: 100;}
+        body:not(.mobile)::-webkit-scrollbar {width: 8px;}
+        body:not(.mobile)::-webkit-scrollbar-track {background: rgba(192, 192, 192, .7); width: 3px;}
+        body:not(.mobile)::-webkit-scrollbar-thumb {background: #f26522;width: 3px;}
+    </style>
+    
+</head>
+<body>
+
+    <!--    Loader-START    -->
+    <div id="loader-wrapper">
+        
+    </div>
+    <!--    Loader-END  -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header class="style2 scrolled">
+            <div class="headerContent">
+                <a id="logo" href="index.html">
+                    <img src="img/logo-white.png" alt="">
+                    <img src="img/logo-black.png" alt="">
+                </a>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="services.html">Отбеливание + гигиена</a></li>
+                        <li><a href="services.html">Керамические виниры</a></li>
+                        <li><a href="services.html">Перевоплощение улыбки</a></li>
+                    </ul>
+                </nav>
+
+                <div class="headerRightSide">
+
+                    <div class="headerContact">
+                        <div class="closeLayer"></div>
+                        <div class="triangleShadow"></div>
+
+                        <div class="imgWrapper">
+                            <img src="fonts/svg/smartphone.svg" alt="">
+                            <img src="fonts/svg/smartphone-black.svg" alt="">
+                        </div>
+
+                        <div class="headerContactInfo">
+                            
+                            <div class="button style3">
+                               <a href="contact.html" class="btn">Записатся сейчас</a>
+                               <i></i>
+                            </div>
+                            
+                            <div class="emptySpace25"></div>
+
+                            <span>Тел.:</span>
+                            <a class="contactLink" href="tel:380660588795">+38 (066) 05 88 795</a>
+
+                            <div class="emptySpace20"></div>
+
+                            <span>Факс:</span>
+                            <a class="contactLink" href="fax:380342501124">+38 (0342) 50 11 24</a>
+
+                            <div class="emptySpace20"></div>
+
+                            <span>Email:</span>
+                            <a class="contactLink" href="mailto:mvisionclinic@gmail.com">mvisionclinic@gmail.com</a>
+
+                            <div class="emptySpace30"></div>
+
+                            <div class="button">
+                               <a href="#" class="btn">Наши контакты</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button smallBtn light">
+                       <a href="http://mvision.pro/" target="_blank" class="btn">Наши курсы</a>
+                    </div>
+
+                    <div class="pageLanguage">
+                        <span>RU</span>
+                        <ul>
+                            <li><a href="index.html">UA</a></li>
+                            <li><a href="index.html">EN</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menuIcon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headerNav">
+                
+                <!-- Description-START -->
+                <div class="headerDescription">
+                    <h2 class="h2 as"><span>Мечта или <b>реальность</b></span></h2>
+                    <h2 class="h2 as active"><span>Реальность или <b>мечта</b></span></h2>
+                    <h2 class="h2 as"><span>Мечта или <b>Новости</b></span></h2>
+                    <h2 class="h2 as"><span>О нас или <b>реальность</b></span></h2>
+                    <h2 class="h2 as"><span>Реальность или <b>Лаборатория</b></span></h2>
+                    <h2 class="h2 as"><span>Контакты или <b>Мечта</b></span></h2>
+                    <h2 class="h2 as"><span>Мечта или <b>Новости</b></span></h2>
+                    <h2 class="h2 as"><span>О нас или <b>реальность</b></span></h2>
+                    <h2 class="h2 as"><span>Реальность или <b>Лаборатория</b></span></h2>
+                </div>
+                <!-- Description-END -->
+
+                <div class="imgWrapper imageHoverAnimation">
+                    <div class="bgImage" style="background-image: url(img/menu-img.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/about-us-img.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/contact-bg.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/about-us-img.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/services-parallax-img.jpg);"></div>
+                    <div class="bgImage" style="background-image: url(img/contact-bg.jpg);"></div>
+                </div>
+                
+                <ul class="navWrapper">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="active"><a href="cases.html">Наши работы</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="laboratory.html">Лаборатория</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li class="hidden-lg"><a href="cases.html">Отбеливание + гигиена</a></li>
+                    <li class="hidden-lg"><a href="cases.html">Керамические виниры</a></li>
+                    <li class="hidden-lg"><a href="cases.html">Перевоплощение улыбки</a></li>
+                </ul>            
+            </div>
+        </header>
+        <!-- Header-END -->
+        
+        <div class="section">
+            <div class="container-fluid">
+                <div class="row animationTrggWrapper">
+                	<div class="col-md-10 col-md-offset-1">
+                		<!-- Description title-START -->
+                        <div class="descrOverflow">
+                            <div class="descriptionTitle mobileRemoveWrapper removeContent">
+                                <h3 class="h3 as light">Successful stories</h3>
+                            </div>
+                        </div>
+                        <!-- Description title-END -->
+
+                        <div class="emptySpace80 emptySpace-lt55 emptySpace-sm45 emptySpace-xs55"></div>
+
+                        <!-- Main title-START -->
+                        <div class="mainTitle">
+                            <h2 class="h2 as">Только <span> <b>счастливые клиенты</b></span></h2>
+                        </div>
+                        <!-- Main title-END -->
+
+                        <div class="emptySpace15 emptySpace-sm25 emptySpace-xs20"></div>
+
+                		<!-- Masonry navigation-START -->
+                		<div class="stickyWrapper">
+            				<div class="sticky">
+            					<div class="fadeOutTop">
+            						<div class="filters-button-group">
+			                			<div class="filterButton is-checked" data-filter=".filter_all">
+			                				<h6 class="h6 as"><b>Все</b></h6>
+			                			</div>
+			                			<div class="filterButton" data-filter=".filter_2">
+			                				<h6 class="h6 as"><b>Отбеливание + гигиена</b></h6>
+			                			</div>
+			                			<div class="filterButton" data-filter=".filter_3">
+			                				<h6 class="h6 as"><b>Керамические виниры</b></h6>
+			                			</div>
+			                			<div class="filterButton" data-filter=".filter_4">
+			                				<h6 class="h6 as"><b>Перевоплощение улыбки</b></h6>
+			                			</div>
+			                		</div>
+			                		<div class="masonryResponsive">
+			                			<span></span>
+				                        <span></span>
+				                        <span></span>
+			                		</div>
+            					</div>
+                			</div>
+                		</div>
+                		<!-- Masonry navigation-END -->
+                	</div>
+
+                	<div class="col-xs-12 fadeOutTop">
+                		<div class="emptySpace100 emptySpace-lt80 emptySpace-sm0"></div>
+                		
+                		<!-- Grid masonry-START -->
+                		<div class="gridWrapper">
+                			<div class="grid fullPageAjax" data-fullPageAjax="case-ajax.html">
+	                			<div class="grid-sizer"></div>
+
+	                			<!-- Masonry 1-START -->
+	                			<div class="grid-item filter_all filter_2">
+	                				<div class="smileThumbs small fadeOutTop">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+	                                   
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup.html" class="ajaxButton ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Лиля</h4></a>
+	                                        <div class="smilePrice">
+	                                            <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+	                                            <span><b>Время:</b> <img src="fonts/svg/wait.svg" alt=""></span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 10 керамических вениров. Цвет B1.</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 1-END -->
+
+	                			<!-- Masonry 2-START -->
+	                			<div class="grid-item filter_all filter_3">
+	                				<div class="smileThumbs small fadeOutTop" style="transition-delay: 300ms">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+                                        
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup2.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile2.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup2.html" class="ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Сантиа</h4></a>
+	                                        <div class="smilePrice">
+	                                            <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+	                                            <span>
+	                                                <b>Время:</b> 
+	                                                <img src="fonts/svg/wait.svg" alt="">
+	                                                <img src="fonts/svg/wait.svg" alt="">
+	                                            </span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 7 керамических вениров.</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 2-END -->
+
+	                			<!-- Masonry 3-START -->
+	                			<div class="grid-item filter_all filter_4">
+	                				<div class="smileThumbs small fadeOutTop" style="transition-delay: 600ms">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+                                        
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile3.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup.html" class="ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Ярослав</h4></a>
+	                                        
+	                                        <div class="smilePrice">
+	                                            <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+	                                            <span><b>Время:</b> <img src="fonts/svg/wait.svg" alt=""></span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 28 керамических реставраций</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 3-END -->
+
+	                			<!-- Masonry 4-START -->
+	                			<div class="grid-item filter_all filter_2">
+	                				<div class="smileThumbs small fadeOutTop">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+	                                       
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup2.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile4.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup2.html" class="ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Ирина</h4></a>
+	                                        <div class="smilePrice">
+	                                            <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+	                                            <span><b>Время:</b> <img src="fonts/svg/wait.svg" alt=""></span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 10 керамических вениров. Цвет B1.</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 4-END -->
+
+	                			<!-- Masonry 5-START -->
+	                			<div class="grid-item filter_all filter_3 filter_2">
+	                				<div class="smileThumbs small fadeOutTop">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+                                        
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile5.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup.html" class="ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Марта</h4></a>
+	                                        <div class="smilePrice">
+	                                            <span>
+	                                            	<b>Цена:</b> 
+	                                            	<img src="fonts/svg/euro-currency-symbol.svg" alt="">
+	                                            	<img src="fonts/svg/euro-currency-symbol.svg" alt="">
+	                                            	<img src="fonts/svg/euro-currency-symbol.svg" alt="">
+	                                            	<img src="fonts/svg/euro-currency-symbol.svg" alt="">
+	                                            </span>
+	                                            <span>
+	                                                <b>Время:</b> 
+	                                                <img src="fonts/svg/wait.svg" alt="">
+	                                                <img src="fonts/svg/wait.svg" alt="">
+	                                            </span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 7 керамических вениров.</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 5-END -->
+
+	                			<!-- Masonry 6-START -->
+	                			<div class="grid-item filter_all filter_2">
+	                				<div class="smileThumbs small fadeOutTop" style="transition-delay: 800ms">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+                                        
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup2.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile6.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup2.html" class="ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Ярослав</h4></a>
+	                                        
+	                                        <div class="smilePrice">
+	                                            <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+	                                            <span>
+	                                            	<b>Время:</b> 
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            </span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 28 керамических реставраций</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 6-END -->
+
+	                			<!-- Masonry 7-START -->
+	                			<div class="grid-item filter_all filter_4">
+	                				<div class="smileThumbs small fadeOutTop" style="transition-delay: 800ms">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+                                        
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile7.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup.html" class="ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Ярослава</h4></a>
+	                                        
+	                                        <div class="smilePrice">
+	                                            <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+	                                            <span>
+	                                            	<b>Время:</b> 
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            </span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 10 керамических вениров. Цвет B1.</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 7-END -->
+
+	                			<!-- Masonry 8-START -->
+	                			<div class="grid-item filter_all filter_3 filter_2">
+	                				<div class="smileThumbs small fadeOutTop" style="transition-delay: 800ms">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+                                        
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup2.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile8.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup2.html" class="ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Валентина</h4></a>
+	                                        
+	                                        <div class="smilePrice">
+	                                            <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+	                                            <span>
+	                                            	<b>Время:</b> 
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            </span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 7 керамических вениров</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 8-END -->
+
+	                			<!-- Masonry 9-START -->
+	                			<div class="grid-item filter_all filter_4">
+	                				<div class="smileThumbs small fadeOutTop" style="transition-delay: 800ms">
+	                                    <a href="#" class="catTitle">Перевоплощение улыбки</a>
+                                        
+                                        <div class="zoomWrapper">
+                                            <a href="case-ajax-popup.html" class="imgWrapper ajaxButton ajaxPopup" data-rel="2">
+                                                <img src="img/smile-placeholder.jpg" alt="">
+                                                <img class="imgPreloader" data-preload="img/smile3.jpg" src="#" alt="">
+                                            </a>
+                                        </div>
+	                                    
+
+	                                    <div class="smileContent">
+	                                        <a href="case-ajax-popup.html" class="ajaxButton ajaxPopup" data-rel="2"><h4 class="h4 as">Ярослав</h4></a>
+	                                        
+	                                        <div class="smilePrice">
+	                                            <span><b>Цена:</b> <img src="fonts/svg/euro-currency-symbol.svg" alt=""></span>
+	                                            <span>
+	                                            	<b>Время:</b> 
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            	<img src="fonts/svg/wait.svg" alt="">
+	                                            </span>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="simpleArticle small">
+	                                        <p><b>Процедура: </b> 28 керамических реставраций</p>
+	                                    </div>
+	                                </div>
+	                                <div class="emptySpace75 emptySpace-xs60"></div>
+	                			</div>
+	                			<!-- Masonry 9-END -->
+	                		</div>
+                		</div>
+                		
+                		<!-- Grid masonry-END -->
+                	</div>
+                </div>
+            </div>
+
+            <div class="emptySpace120 emptySpace-lt100 emptySpace-sm0"></div>
+        </div>
+        
+
+        <!-- Footer-START -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="emptySpace100 emptySpce-sm75 emptySpace-xs60"></div>
+
+                        <div class="footerBigLogo">MVISION</div>
+
+                        <a href="index.html" class="footerLogo imgWrapper"><img src="img/logo-black.png" alt=""></a>
+
+                        <div class="emptySpace50 emptySpace-xs30"></div>
+
+                        <ul class="footerNav">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="cases.html">Наши работы</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="laboratory.html">Лаборатория</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+
+                        <div class="emptySpace55 emptySpace-xs30"></div>
+
+                        <!--    Social-START    -->
+                        <div class="socialWrapper">
+                            <a class="fb" href="https://www.facebook.com/" target="_blank"><img src="fonts/svg/facebook-logo-white.svg" alt=""></a>
+                            <a class="inst" href="https://www.instagram.com/" target="_blank"><img src="fonts/svg/instagram-white.svg" alt=""></a>
+                            <a class="yot" href="https://www.youtube.com/" target="_blank"><img src="fonts/svg/youtube-white.svg" alt=""></a>
+                        </div>
+                        <!--    Social-END  -->
+
+                        <div class="emptySpace50 emptySpace-xs30"></div>
+
+                        <div class="copy">&copy; 2018 Стоматологическая практика Михайлюка</div>
+                        <div class="redstone">
+                            <a href="http://redstone.media/" class="" title="Разработка сайтов">
+                                <p>Разработка</p>
+                                <img src="img/redstone-logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="emptySpace60 emptySpace-xs60"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+    </div>
+
+    <!--    Popup-START     -->
+    <div class="popupWrapper">
+        <div class="bgLayer"></div>
+        <!--    Popup1-START    -->
+        <div class="popupContent" data-rel="1">
+            <div class="layerClose"></div>
+            <div class="popupContainer size1 ">
+                <div class="thankYouMssg textCenter">
+                    <!-- Description title-START -->
+                    <div class="descrOverflow">
+                        <div class="descriptionTitle mobileRemoveWrapper removeContent">
+                            <h3 class="h3 as light">Thank you!</h3>
+                        </div>
+                    </div>
+                    <!-- Description title-END -->
+
+                    <div class="simpleTitle large tiny">
+                        <h3 class="h3 as">Ваше <b>сообщение отправлено</b></h3>
+                        <div class="simpleArticle">
+                            <p>Наш администратор свяжется с вами как можно скорее</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!--    Popup close button-START    -->
+                <div class="buttonClose">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Popup1-END  -->
+
+        <!-- Case popup-START -->
+        <div class="popupContent popupAni2" data-rel="2" style="background-color: #fff">
+            <div class="layerClose"></div>
+            <div class="popupContainer fullSize ajaxWrapperContent">
+                
+            </div>
+        </div>
+        <!-- Case popup-END -->
+
+        <!--    Video-START    -->
+        <div class="popupContent" data-rel="videoPopup">
+            <div class="layerClose"></div>
+            <div class="popupContainer">
+                <!-- Popup content-START -->
+                <div class="popupVideWrapper">
+                    
+                </div>
+                <!-- Popup content-END -->
+
+                <!--    Popup close button-START    -->
+                <div class="buttonClose light">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Video-END  -->
+
+    </div>
+    <!--    Popup-END   -->
+	
+	<!-- Ajax loader-START -->
+    <div class="ajaxLoader">
+    	<div class="Loader">
+			<div class="Bar"></div>
+			<div class="Bar"></div>
+			<div class="Bar"></div>
+			<div class="Bar"></div>
+			<div class="Bar"></div>
+			<div class="Bar"></div>
+		</div>
+    </div>
+    <!-- Ajax loader-END -->
+    
+    <!--    Styles-START    -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+    <!--    Styles-END  -->
+
+    <!-- Fonts-START -->
+    <link href="https://fonts.googleapis.com/css?family=Arsenal:400,700%7CRoboto:400,500,700" rel="stylesheet">
+    <!-- Fonts-END -->
+
+    <!--    Scripts-START   -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/global.min.js"></script>
+    <!--    Scripts-END     -->
+
+</body>
+</html>
